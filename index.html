@@ -23,7 +23,10 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'bg-color': '#B68C5A',
+                    },
+                    backgroundImage: {
+                        'hero-img': "url('/images/banner.png')"
                     }
                 }
             }
@@ -37,7 +40,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header>
         <!-- nav section -->
         <nav class="container mx-auto py-5">
             <div class="navbar bg-base-100">
@@ -59,11 +62,7 @@
                             <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
                         </ul>
                     </div>
-                    <div class="flex">
-                        <img src="images/logo.png" alt="">
-                        <a class="-ml-24 text-7xl font-bold">Justice</a>
-                    </div>
-
+                    <img src="./images/logo2.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-[#707070] text-base font-bold">
@@ -74,11 +73,38 @@
                         <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn bg-[#B68C5A] border-2 text-white text-lg">Free Consultation</a>
+                <div class="navbar-end sm:navbar-center">
+                    <a class="btn bg-bg-color border-2 text-white lg:text-lg text-inherit">Free Consultation</a>
                 </div>
             </div>
         </nav>
+        <!-- banner part start -->
+        <section class="">
+            <div class="container mx-auto rounded-lg ">
+                <div class="rounded-3xl hero min-h-[calc(100vh-150px)] bg-hero-img">
+                    <div class=""></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="mb-5 text-5xl font-bold py-2">We Provide Effective <br> Legal
+                                Solutions
+                            </h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <input class="p-3 w-3/4 rounded-xl" type="text" placeholder="Search your services">
+                            <button class="btn bg-bg-color border-none ">Search</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Main part start here -->
+        <!-- The legal practice Area -->
+        <section class="container mx-auto">
+
+        </section>
     </header>
 </body>
 
